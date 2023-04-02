@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" type="text/css" href="blackjack.css" />
+    <link rel="icon" type="image/jpg" href="blackjack.jpg" />
+  </head>
+  <body>
+    <div id="container">
+      <center><h4 id="welcome">BlackJack</h4></center>
+      <center><h5 class="qst">Want to play a round?</h5></center>
+      <center><h5 id="card1" class="qst">Card 1:</h5></center>
+      <center><h5 id="card2" class="qst">Card 2:</h5></center>
+      <center><h5 id="sum" class="qst">Sum:</h5></center>
+      <br /><br />
+
+      <section>
+        <center>
+          <button id="startbtn" onclick="card_display()">START GAME</button>
+
+          <script type="text/javascript">
+            function timeFunction() {
+              setTimeout(function () {
+                if (confirm("Would you like to play again?"))
+                  document.location =
+                    "file:///C:/Users/KIT/OneDrive/Desktop/coding%20projects/Javascript%20testing/blackjack.html";
+              }, 2000);
+            }
+          </script>
+
+          <br /><br /><br /><br /><br /><br /><br />
+          <button
+            type="submit"
+            id="restart-btn"
+            onclick="window.location.href=window.location.href"
+          >
+            Play again!
+          </button>
+        </center>
+      </section>
+
+      <p id="bj"></p>
+
+      <script type="text/javascript" src="blackjack.js"></script>
+    </div>
+  </body>
+</html>
